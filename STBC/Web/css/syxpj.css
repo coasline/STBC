@@ -1,0 +1,40 @@
+#TaskDiv{
+    position: absolute;
+    left: 0px; top: 10px;
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+.dialog
+{
+    width:600px;
+    height:250px;
+    left: 400px; top: 200px;
+    position:absolute;
+    background-color:#ccc;
+    -webkit-box-shadow:1px 1px 3px #292929;
+    -moz-box-shadow:1px 1px 3px #292929;
+    box-shadow:1px 1px 3px #292929;
+    margin:10px;
+}
+
+.dialog-title
+{
+    color:#fff;
+    background-color:#404040;
+    font-size:12pt;
+    font-weight:bold;
+    padding:4px 6px;
+    cursor:move;
+}
+.dialog-content
+{
+    padding:4px;
+   line-height: 30px;
+}
+#zhibiao input{
+	width:100px;
+}
+

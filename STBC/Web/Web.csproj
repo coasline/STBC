@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{576A387A-893A-408D-9B6C-31F41180C820}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\chromebg-over.gif" />
+    <Content Include="css\chromebg.gif" />
+    <Content Include="css\chromebg2-over.gif" />
+    <Content Include="css\chromebg2.gif" />
+    <Content Include="css\chromebg3-over.gif" />
+    <Content Include="css\chromebg3.gif" />
+    <Content Include="css\chromebg4-over.gif" />
+    <Content Include="css\chromebg4.gif" />
+    <Content Include="css\chromestyle2.css" />
+    <Content Include="css\Default.css" />
+    <Content Include="css\demo.css" />
+    <Content Include="css\dhtmlxtree.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\homePage.css" />
+    <Content Include="css\images\gooflow_bg.png" />
+    <Content Include="css\images\gooflow_blank.gif" />
+    <Content Include="css\images\gooflow_btn_bg.png" />
+    <Content Include="css\images\gooflow_bullet.png" />
+    <Content Include="css\images\gooflow_icon.png" />
+    <Content Include="css\images\GooFlow_line_oper.png" />
+    <Content Include="css\images\gooflow_tip.png" />
+    <Content Include="css\jbpm-default.css" />
+    <Content Include="css\jbpm-style.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\LoginMain.css" />
+    <Content Include="css\mainmenu-navigation.css" />
+    <Content Include="css\RuleStyle.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\syxpj.css" />
+    <Content Include="css\table.css" />
+    <Content Include="css\themes.css" />
+    <Content Include="DataManager.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="ImagesLogin\add.png" />
+    <Content Include="ImagesLogin\application.png" />
+    <Content Include="ImagesLogin\arrows.png" />
+    <Content Include="ImagesLogin\arrow_b.png" />
+    <Content Include="ImagesLogin\arrow_down.png" />
+    <Content Include="ImagesLogin\arrow_g.png" />
+    <Content Include="ImagesLogin\arrow_lb.png" />
+    <Content Include="ImagesLogin\arrow_o.png" />
+    <Content Include="ImagesLogin\arrow_S1.png" />
+    <Content Include="ImagesLogin\arrow_S10.png" />
+    <Content Include="ImagesLogin\arrow_S11.png" />
+    <Content Include="ImagesLogin\arrow_S12.png" />
+    <Content Include="ImagesLogin\arrow_S13.png" />
+    <Content Include="ImagesLogin\arrow_S14.png" />
+    <Content Include="ImagesLogin\arrow_S15.png" />
+    <Content Include="ImagesLogin\arrow_S2.png" />
+    <Content Include="ImagesLogin\arrow_S3.png" />
+    <Content Include="ImagesLogin\arrow_S4.png" />
+    <Content Include="ImagesLogin\arrow_S5.png" />
+    <Content Include="ImagesLogin\arrow_S7.png" />
+    <Content Include="ImagesLogin\arrow_S8.png" />
+    <Content Include="ImagesLogin\arrow_S9.png" />
+    <Content Include="ImagesLogin\arrow_up.png" />
+    <Content Include="ImagesLogin\banner.png" />
+    <Content Include="ImagesLogin\barBG_S1.png" />
+    <Content Include="ImagesLogin\bbs_bannerBG.png" />
+    <Content Include="ImagesLogin\BG.png" />
+    <Content Include="ImagesLogin\BG24.png" />
+    <Content Include="ImagesLogin\BGa_S1.png" />
+    <Content Include="ImagesLogin\BGa_S2.png" />
+    <Content Include="ImagesLogin\BGx.png" />
+    <Content Include="ImagesLogin\BGx24.png" />
+    <Content Include="ImagesLogin\BGy.png" />
+    <Content Include="ImagesLogin\BGy24.png" />
+    <Content Include="ImagesLogin\blackBL.png" />
+    <Content Include="ImagesLogin\blank.gif" />
+    <Content Include="ImagesLogin\bullet_orange.png" />
+    <Content Include="ImagesLogin\bullet_red.png" />
+    <Content Include="ImagesLogin\calendar.png" />
+    <Content Include="ImagesLogin\calogin.png" />
+    <Content Include="ImagesLogin\cancel.png" />
+    <Content Include="ImagesLogin\chart_bar.png" />
+    <Content Include="ImagesLogin\close.png" />
+    <Content Include="ImagesLogin\cloud.png" />
+    <Content Include="ImagesLogin\coins.png" />
+    <Content Include="ImagesLogin\comments.png" />
+    <Content Include="ImagesLogin\database.png" />
+    <Content Include="ImagesLogin\database_edit.png" />
+    <Content Include="ImagesLogin\delete.png" />
+    <Content Include="ImagesLogin\deskTop_03.png" />
+    <Content Include="ImagesLogin\disk.png" />
+    <Content Include="ImagesLogin\diy\1_close.png" />
+    <Content Include="ImagesLogin\diy\1_open.png" />
+    <Content Include="ImagesLogin\diy\2.png" />
+    <Content Include="ImagesLogin\diy\3.png" />
+    <Content Include="ImagesLogin\diy\4.png" />
+    <Content Include="ImagesLogin\diy\5.png" />
+    <Content Include="ImagesLogin\diy\6.png" />
+    <Content Include="ImagesLogin\diy\7.png" />
+    <Content Include="ImagesLogin\diy\8.png" />
+    <Content Include="ImagesLogin\diy\9.png" />
+    <Content Include="ImagesLogin\down.png" />
+    <Content Include="ImagesLogin\enter.png" />
+    <Content Include="ImagesLogin\error.png" />
+    <Content Include="ImagesLogin\eye.png" />
+    <Content Include="ImagesLogin\ff.png" />
+    <Content Include="ImagesLogin\folder.png" />
+    <Content Include="ImagesLogin\folder_page.png" />
+    <Content Include="ImagesLogin\group.png" />
+    <Content Include="ImagesLogin\group_d.png" />
+    <Content Include="ImagesLogin\group_edit.png" />
+    <Content Include="ImagesLogin\help.png" />
+    <Content Include="ImagesLogin\hidden.png" />
+    <Content Include="ImagesLogin\house.png" />
+    <Content Include="ImagesLogin\icon_1.png" />
+    <Content Include="ImagesLogin\icon_10.png" />
+    <Content Include="ImagesLogin\icon_11.png" />
+    <Content Include="ImagesLogin\icon_12.png" />
+    <Content Include="ImagesLogin\icon_13.png" />
+    <Content Include="ImagesLogin\icon_14.png" />
+    <Content Include="ImagesLogin\icon_15.png" />
+    <Content Include="ImagesLogin\icon_16.png" />
+    <Content Include="ImagesLogin\icon_17.png" />
+    <Content Include="ImagesLogin\icon_18.png" />
+    <Content Include="ImagesLogin\icon_19.png" />
+    <Content Include="ImagesLogin\icon_2.png" />
+    <Content Include="ImagesLogin\icon_20.png" />
+    <Content Include="ImagesLogin\icon_21.png" />
+    <Content Include="ImagesLogin\icon_22.png" />
+    <Content Include="ImagesLogin\icon_23.png" />
+    <Content Include="ImagesLogin\icon_24.png" />
+    <Content Include="ImagesLogin\icon_25.png" />
+    <Content Include="ImagesLogin\icon_26.png" />
+    <Content Include="ImagesLogin\icon_27.png" />
+    <Content Include="ImagesLogin\icon_28.png" />
+    <Content Include="ImagesLogin\icon_29.png" />
+    <Content Include="ImagesLogin\icon_3.png" />
+    <Content Include="ImagesLogin\icon_30.png" />
+    <Content Include="ImagesLogin\icon_31.png" />
+    <Content Include="ImagesLogin\icon_32.png" />
+    <Content Include="ImagesLogin\icon_33.png" />
+    <Content Include="ImagesLogin\icon_34.png" />
+    <Content Include="ImagesLogin\icon_35.png" />
+    <Content Include="ImagesLogin\icon_36.png" />
+    <Content Include="ImagesLogin\icon_37.png" />
+    <Content Include="ImagesLogin\icon_38.png" />
+    <Content Include="ImagesLogin\icon_39.png" />
+    <Content Include="ImagesLogin\icon_4.png" />
+    <Content Include="ImagesLogin\icon_40.png" />
+    <Content Include="ImagesLogin\icon_41.png" />
+    <Content Include="ImagesLogin\icon_42.png" />
+    <Content Include="ImagesLogin\icon_43.png" />
+    <Content Include="ImagesLogin\icon_44.png" />
+    <Content Include="ImagesLogin\icon_45.png" />
+    <Content Include="ImagesLogin\icon_46.png" />
+    <Content Include="ImagesLogin\icon_47.png" />
+    <Content Include="ImagesLogin\icon_48.png" />
+    <Content Include="ImagesLogin\icon_49.png" />
+    <Content Include="ImagesLogin\icon_5.png" />
+    <Content Include="ImagesLogin\icon_50.png" />
+    <Content Include="ImagesLogin\icon_51.png" />
+    <Content Include="ImagesLogin\icon_52.png" />
+    <Content Include="ImagesLogin\icon_53.png" />
+    <Content Include="ImagesLogin\icon_54.png" />
+    <Content Include="ImagesLogin\icon_55.png" />
+    <Content Include="ImagesLogin\icon_56.png" />
+    <Content Include="ImagesLogin\icon_57.png" />
+    <Content Include="ImagesLogin\icon_58.png" />
+    <Content Include="ImagesLogin\icon_59.png" />
+    <Content Include="ImagesLogin\icon_6.png" />
+    <Content Include="ImagesLogin\icon_60.png" />
+    <Content Include="ImagesLogin\icon_61.png" />
+    <Content Include="ImagesLogin\icon_62.png" />
+    <Content Include="ImagesLogin\icon_7.png" />
+    <Content Include="ImagesLogin\icon_8.png" />
+    <Content Include="ImagesLogin\icon_9.png" />
+    <Content Include="ImagesLogin\key.png" />
+    <Content Include="ImagesLogin\key_add.png" />
+    <Content Include="ImagesLogin\key_delete.png" />
+    <Content Include="ImagesLogin\line_conn.gif" />
+    <Content Include="ImagesLogin\link.png" />
+    <Content Include="ImagesLogin\loading.gif" />
+    <Content Include="ImagesLogin\loadingBar.gif" />
+    <Content Include="ImagesLogin\login.png" />
+    <Content Include="ImagesLogin\login_Icon.png" />
+    <Content Include="ImagesLogin\login_Panel.png" />
+    <Content Include="ImagesLogin\login_portal_panel.png" />
+    <Content Include="ImagesLogin\login_Text.png" />
+    <Content Include="ImagesLogin\magnifier.png" />
+    <Content Include="ImagesLogin\map.png" />
+    <Content Include="ImagesLogin\map_d.png" />
+    <Content Include="ImagesLogin\next.png" />
+    <Content Include="ImagesLogin\nophoto.jpg" />
+    <Content Include="ImagesLogin\note.png" />
+    <Content Include="ImagesLogin\page_delete.png" />
+    <Content Include="ImagesLogin\page_edit.png" />
+    <Content Include="ImagesLogin\page_excel.png" />
+    <Content Include="ImagesLogin\page_white.png" />
+    <Content Include="ImagesLogin\page_white_edit.png" />
+    <Content Include="ImagesLogin\page_white_put.png" />
+    <Content Include="ImagesLogin\page_word.png" />
+    <Content Include="ImagesLogin\pencil.png" />
+    <Content Include="ImagesLogin\photos.png" />
+    <Content Include="ImagesLogin\photo_link.png" />
+    <Content Include="ImagesLogin\prev.png" />
+    <Content Include="ImagesLogin\printer.png" />
+    <Content Include="ImagesLogin\report.png" />
+    <Content Include="ImagesLogin\report_add.png" />
+    <Content Include="ImagesLogin\show.png" />
+    <Content Include="ImagesLogin\siderBG.png" />
+    <Content Include="ImagesLogin\sysMenuBL.png" />
+    <Content Include="ImagesLogin\tabs.png" />
+    <Content Include="ImagesLogin\tag_blue_add.png" />
+    <Content Include="ImagesLogin\tag_blue_delete.png" />
+    <Content Include="ImagesLogin\tag_blue_edit.png" />
+    <Content Include="ImagesLogin\tag_yellow.png" />
+    <Content Include="ImagesLogin\tick.png" />
+    <Content Include="ImagesLogin\title_1.png" />
+    <Content Include="ImagesLogin\title_10.png" />
+    <Content Include="ImagesLogin\title_11.png" />
+    <Content Include="ImagesLogin\title_12.png" />
+    <Content Include="ImagesLogin\title_13.png" />
+    <Content Include="ImagesLogin\title_14.png" />
+    <Content Include="ImagesLogin\title_15.png" />
+    <Content Include="ImagesLogin\title_16.png" />
+    <Content Include="ImagesLogin\title_17.png" />
+    <Content Include="ImagesLogin\title_18.png" />
+    <Content Include="ImagesLogin\title_19.png" />
+    <Content Include="ImagesLogin\title_2.png" />
+    <Content Include="ImagesLogin\title_20.png" />
+    <Content Include="ImagesLogin\title_21.png" />
+    <Content Include="ImagesLogin\title_3.png" />
+    <Content Include="ImagesLogin\title_4.png" />
+    <Content Include="ImagesLogin\title_5.png" />
+    <Content Include="ImagesLogin\title_6.png" />
+    <Content Include="ImagesLogin\title_7.png" />
+    <Content Include="ImagesLogin\title_8.png" />
+    <Content Include="ImagesLogin\title_9.png" />
+    <Content Include="ImagesLogin\tree_.png" />
+    <Content Include="ImagesLogin\up.png" />
+    <Content Include="ImagesLogin\user_delete.png" />
+    <Content Include="ImagesLogin\user_edit.png" />
+    <Content Include="ImagesLogin\user_female.png" />
+    <Content Include="ImagesLogin\vcard.png" />
+    <Content Include="ImagesLogin\vcard_edit.png" />
+    <Content Include="ImagesLogin\wallpaper.png" />
+    <Content Include="ImagesLogin\whiteBL.png" />
+    <Content Include="ImagesLogin\windowClose.png" />
+    <Content Include="ImagesLogin\windowMax.png" />
+    <Content Include="ImagesLogin\windowMin.png" />
+    <Content Include="ImagesLogin\windowRestore.png" />
+    <Content Include="ImagesLogin\zTreeStandard.gif" />
+    <Content Include="ImagesLogin\zTreeStandard.png" />
+    <Content Include="images\0.jpg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.png" />
+    <Content Include="images\3.png" />
+    <Content Include="images\4.png" />
+    <Content Include="images\add.png" />
+    <Content Include="images\application.png" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\arrow_b.png" />
+    <Content Include="images\arrow_down.png" />
+    <Content Include="images\arrow_g.png" />
+    <Content Include="images\arrow_lb.png" />
+    <Content Include="images\arrow_o.png" />
+    <Content Include="images\arrow_S1.png" />
+    <Content Include="images\arrow_S10.png" />
+    <Content Include="images\arrow_S11.png" />
+    <Content Include="images\arrow_S12.png" />
+    <Content Include="images\arrow_S13.png" />
+    <Content Include="images\arrow_S14.png" />
+    <Content Include="images\arrow_S15.png" />
+    <Content Include="images\arrow_S2.png" />
+    <Content Include="images\arrow_S3.png" />
+    <Content Include="images\arrow_S4.png" />
+    <Content Include="images\arrow_S5.png" />
+    <Content Include="images\arrow_S7.png" />
+    <Content Include="images\arrow_S8.png" />
+    <Content Include="images\arrow_S9.png" />
+    <Content Include="images\arrow_up.png" />
+    <Content Include="images\banner.png" />
+    <Content Include="images\barBG_S1.png" />
+    <Content Include="images\bbs_bannerBG.png" />
+    <Content Include="images\BG.png" />
+    <Content Include="images\bg21.jpg" />
+    <Content Include="images\BG24.png" />
+    <Content Include="images\BGa_S1.png" />
+    <Content Include="images\BGa_S2.png" />
+    <Content Include="images\BGx.png" />
+    <Content Include="images\BGx24.png" />
+    <Content Include="images\BGy.png" />
+    <Content Include="images\BGy24.png" />
+    <Content Include="images\blackBL.png" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\bullet_orange.png" />
+    <Content Include="images\bullet_red.png" />
+    <Content Include="images\calendar.png" />
+    <Content Include="images\cancel.png" />
+    <Content Include="images\chart_bar.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\cloud.png" />
+    <Content Include="images\coins.png" />
+    <Content Include="images\colorpicker_background.png" />
+    <Content Include="images\colorpicker_hex.png" />
+    <Content Include="images\colorpicker_hsb_b.png" />
+    <Content Include="images\colorpicker_hsb_h.png" />
+    <Content Include="images\colorpicker_hsb_s.png" />
+    <Content Include="images\colorpicker_indic.gif" />
+    <Content Include="images\colorpicker_overlay.png" />
+    <Content Include="images\colorpicker_rgb_b.png" />
+    <Content Include="images\colorpicker_rgb_g.png" />
+    <Content Include="images\colorpicker_rgb_r.png" />
+    <Content Include="images\colorpicker_select.png" />
+    <Content Include="images\colorpicker_submit.png" />
+    <Content Include="images\comments.png" />
+    <Content Include="images\custom_background.png" />
+    <Content Include="images\custom_hex.png" />
+    <Content Include="images\custom_hsb_b.png" />
+    <Content Include="images\custom_hsb_h.png" />
+    <Content Include="images\custom_hsb_s.png" />
+    <Content Include="images\custom_indic.gif" />
+    <Content Include="images\custom_rgb_b.png" />
+    <Content Include="images\custom_rgb_g.png" />
+    <Content Include="images\custom_rgb_r.png" />
+    <Content Include="images\custom_submit.png" />
+    <Content Include="images\database.png" />
+    <Content Include="images\database_edit.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\deskTop_03.png" />
+    <Content Include="images\dhxtree_skyblue\blank.gif" />
+    <Content Include="images\dhxtree_skyblue\but_cut.gif" />
+    <Content Include="images\dhxtree_skyblue\folderClosed.gif" />
+    <Content Include="images\dhxtree_skyblue\folderOpen.gif" />
+    <Content Include="images\dhxtree_skyblue\iconCheckAll.gif" />
+    <Content Include="images\dhxtree_skyblue\iconCheckDis.gif" />
+    <Content Include="images\dhxtree_skyblue\iconCheckGray.gif" />
+    <Content Include="images\dhxtree_skyblue\iconUncheckAll.gif" />
+    <Content Include="images\dhxtree_skyblue\iconUncheckDis.gif" />
+    <Content Include="images\dhxtree_skyblue\leaf.gif" />
+    <Content Include="images\dhxtree_skyblue\line.gif" />
+    <Content Include="images\dhxtree_skyblue\line1.gif" />
+    <Content Include="images\dhxtree_skyblue\line1_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\line2.gif" />
+    <Content Include="images\dhxtree_skyblue\line2_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\line3.gif" />
+    <Content Include="images\dhxtree_skyblue\line3_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\line4.gif" />
+    <Content Include="images\dhxtree_skyblue\line4_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\lock.gif" />
+    <Content Include="images\dhxtree_skyblue\minus.gif" />
+    <Content Include="images\dhxtree_skyblue\minus1.gif" />
+    <Content Include="images\dhxtree_skyblue\minus2.gif" />
+    <Content Include="images\dhxtree_skyblue\minus2_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\minus3.gif" />
+    <Content Include="images\dhxtree_skyblue\minus3_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\minus4.gif" />
+    <Content Include="images\dhxtree_skyblue\minus4_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\minus5.gif" />
+    <Content Include="images\dhxtree_skyblue\minus5_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\plus.gif" />
+    <Content Include="images\dhxtree_skyblue\plus1.gif" />
+    <Content Include="images\dhxtree_skyblue\plus2.gif" />
+    <Content Include="images\dhxtree_skyblue\plus2_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\plus3.gif" />
+    <Content Include="images\dhxtree_skyblue\plus3_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\plus4.gif" />
+    <Content Include="images\dhxtree_skyblue\plus4_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\plus5.gif" />
+    <Content Include="images\dhxtree_skyblue\plus5_rtl.gif" />
+    <Content Include="images\dhxtree_skyblue\radio_off.gif" />
+    <Content Include="images\dhxtree_skyblue\radio_on.gif" />
+    <Content Include="images\disk.png" />
+    <Content Include="images\down.png" />
+    <Content Include="images\enter.png" />
+    <Content Include="images\error.png" />
+    <Content Include="images\eye.png" />
+    <Content Include="images\ff.png" />
+    <Content Include="images\folder.png" />
+    <Content Include="images\folder_page.png" />
+    <Content Include="images\gooflow_bg.png" />
+    <Content Include="images\gooflow_blank.gif" />
+    <Content Include="images\gooflow_btn_bg.png" />
+    <Content Include="images\gooflow_bullet.png" />
+    <Content Include="images\gooflow_icon.png" />
+    <Content Include="images\GooFlow_line_oper.png" />
+    <Content Include="images\gooflow_tip.png" />
+    <Content Include="images\group.png" />
+    <Content Include="images\group_d.png" />
+    <Content Include="images\group_edit.png" />
+    <Content Include="images\help.png" />
+    <Content Include="images\hidden.png" />
+    <Content Include="images\house.png" />
+    <Content Include="images\icon_1.png" />
+    <Content Include="images\icon_10.png" />
+    <Content Include="images\icon_11.png" />
+    <Content Include="images\icon_12.png" />
+    <Content Include="images\icon_13.png" />
+    <Content Include="images\icon_14.png" />
+    <Content Include="images\icon_15.png" />
+    <Content Include="images\icon_16.png" />
+    <Content Include="images\icon_17.png" />
+    <Content Include="images\icon_18.png" />
+    <Content Include="images\icon_19.png" />
+    <Content Include="images\icon_2.png" />
+    <Content Include="images\icon_20.png" />
+    <Content Include="images\icon_21.png" />
+    <Content Include="images\icon_22.png" />
+    <Content Include="images\icon_23.png" />
+    <Content Include="images\icon_24.png" />
+    <Content Include="images\icon_25.png" />
+    <Content Include="images\icon_26.png" />
+    <Content Include="images\icon_27.png" />
+    <Content Include="images\icon_28.png" />
+    <Content Include="images\icon_29.png" />
+    <Content Include="images\icon_3.png" />
+    <Content Include="images\icon_30.png" />
+    <Content Include="images\icon_31.png" />
+    <Content Include="images\icon_32.png" />
+    <Content Include="images\icon_33.png" />
+    <Content Include="images\icon_34.png" />
+    <Content Include="images\icon_35.png" />
+    <Content Include="images\icon_36.png" />
+    <Content Include="images\icon_37.png" />
+    <Content Include="images\icon_38.png" />
+    <Content Include="images\icon_39.png" />
+    <Content Include="images\icon_4.png" />
+    <Content Include="images\icon_40.png" />
+    <Content Include="images\icon_41.png" />
+    <Content Include="images\icon_42.png" />
+    <Content Include="images\icon_43.png" />
+    <Content Include="images\icon_44.png" />
+    <Content Include="images\icon_45.png" />
+    <Content Include="images\icon_46.png" />
+    <Content Include="images\icon_47.png" />
+    <Content Include="images\icon_48.png" />
+    <Content Include="images\icon_49.png" />
+    <Content Include="images\icon_5.png" />
+    <Content Include="images\icon_50.png" />
+    <Content Include="images\icon_51.png" />
+    <Content Include="images\icon_52.png" />
+    <Content Include="images\icon_53.png" />
+    <Content Include="images\icon_54.png" />
+    <Content Include="images\icon_55.png" />
+    <Content Include="images\icon_56.png" />
+    <Content Include="images\icon_57.png" />
+    <Content Include="images\icon_58.png" />
+    <Content Include="images\icon_59.png" />
+    <Content Include="images\icon_6.png" />
+    <Content Include="images\icon_60.png" />
+    <Content Include="images\icon_61.png" />
+    <Content Include="images\icon_62.png" />
+    <Content Include="images\icon_7.png" />
+    <Content Include="images\icon_8.png" />
+    <Content Include="images\icon_9.png" />
+    <Content Include="images\key.png" />
+    <Content Include="images\key_add.png" />
+    <Content Include="images\key_delete.png" />
+    <Content Include="images\line_conn.gif" />
+    <Content Include="images\link.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loadingBar.gif" />
+    <Content Include="images\login_Icon.png" />
+    <Content Include="images\login_Panel.png" />
+    <Content Include="images\login_portal_panel.png" />
+    <Content Include="images\login_Text.png" />
+    <Content Include="images\magnifier.png" />
+    <Content Include="images\map.png" />
+    <Content Include="images\map_d.png" />
+    <Content Include="images\miaoshu.jpg" />
+    <Content Include="images\next.png" />
+    <Content Include="images\nophoto.jpg" />
+    <Content Include="images\note.png" />
+    <Content Include="images\page_delete.png" />
+    <Content Include="images\page_edit.png" />
+    <Content Include="images\page_excel.png" />
+    <Content Include="images\page_white.png" />
+    <Content Include="images\page_white_edit.png" />
+    <Content Include="images\page_white_put.png" />
+    <Content Include="images\page_word.png" />
+    <Content Include="images\pencil.png" />
+    <Content Include="images\photos.png" />
+    <Content Include="images\photo_link.png" />
+    <Content Include="images\prev.png" />
+    <Content Include="images\printer.png" />
+    <Content Include="images\render.jpg" />
+    <Content Include="images\report.png" />
+    <Content Include="images\report_add.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\select.png" />
+    <Content Include="images\select2.png" />
+    <Content Include="images\show.png" />
+    <Content Include="images\siderBG.png" />
+    <Content Include="images\slider.png" />
+    <Content Include="images\suofang.jpg" />
+    <Content Include="images\sysMenuBL.png" />
+    <Content Include="images\table.jpg" />
+    <Content Include="images\tabs.png" />
+    <Content Include="images\tag_blue_add.png" />
+    <Content Include="images\tag_blue_delete.png" />
+    <Content Include="images\tag_blue_edit.png" />
+    <Content Include="images\tag_yellow.png" />
+    <Content Include="images\tick.png" />
+    <Content Include="images\title_1.png" />
+    <Content Include="images\title_10.png" />
+    <Content Include="images\title_11.png" />
+    <Content Include="images\title_12.png" />
+    <Content Include="images\title_13.png" />
+    <Content Include="images\title_14.png" />
+    <Content Include="images\title_15.png" />
+    <Content Include="images\title_16.png" />
+    <Content Include="images\title_17.png" />
+    <Content Include="images\title_18.png" />
+    <Content Include="images\title_19.png" />
+    <Content Include="images\title_2.png" />
+    <Content Include="images\title_20.png" />
+    <Content Include="images\title_21.png" />
+    <Content Include="images\title_3.png" />
+    <Content Include="images\title_4.png" />
+    <Content Include="images\title_5.png" />
+    <Content Include="images\title_6.png" />
+    <Content Include="images\title_7.png" />
+    <Content Include="images\title_8.png" />
+    <Content Include="images\title_9.png" />
+    <Content Include="images\transparent.jpg" />
+    <Content Include="images\tree_.png" />
+    <Content Include="images\up.png" />
+    <Content Include="images\user_delete.png" />
+    <Content Include="images\user_edit.png" />
+    <Content Include="images\user_female.png" />
+    <Content Include="images\v4_03.png" />
+    <Content Include="images\vcard.png" />
+    <Content Include="images\vcard_edit.png" />
+    <Content Include="images\wallpaper.png" />
+    <Content Include="images\whiteBL.png" />
+    <Content Include="images\windowClose.png" />
+    <Content Include="images\windowMax.png" />
+    <Content Include="images\windowMin.png" />
+    <Content Include="images\windowRestore.png" />
+    <Content Include="images\zTreeStandard.gif" />
+    <Content Include="images\zTreeStandard.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\Fuzzfuction.js" />
+    <Content Include="js\Limcond.js" />
+    <Content Include="js\Matrix.js" />
+    <Content Include="KnowlgManager.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Login2.aspx" />
+    <Content Include="ModelManager.aspx" />
+    <Content Include="RiskAssessment.aspx" />
+    <Content Include="Rnd.aspx" />
+    <Content Include="Script\BaiduLayer.js" />
+    <Content Include="Script\browser_version.js" />
+    <Content Include="Script\colorpicker.js" />
+    <Content Include="Script\createXmlHttp.js" />
+    <Content Include="Script\Default.js" />
+    <Content Include="Script\dhtmlxtree.js" />
+    <Content Include="Script\images\gooflow_bg.png" />
+    <Content Include="Script\images\gooflow_blank.gif" />
+    <Content Include="Script\images\gooflow_btn_bg.png" />
+    <Content Include="Script\images\gooflow_bullet.png" />
+    <Content Include="Script\images\gooflow_icon.png" />
+    <Content Include="Script\images\GooFlow_line_oper.png" />
+    <Content Include="Script\images\gooflow_tip.png" />
+    <Content Include="Script\image\background.png" />
+    <Content Include="Script\image\head.png" />
+    <Content Include="Script\image\left-inside.png" />
+    <Content Include="Script\image\login.png" />
+    <Content Include="Script\image\logo-l.png" />
+    <Content Include="Script\image\op-left-nav.png" />
+    <Content Include="Script\image\QQ图片20150509014745.png" />
+    <Content Include="Script\image\right-nav.png" />
+    <Content Include="Script\image\tool1.png" />
+    <Content Include="Script\image\tool2.png" />
+    <Content Include="Script\image\tool3.png" />
+    <Content Include="Script\image\tool4.png" />
+    <Content Include="Script\image\tool5.png" />
+    <Content Include="Script\image\tool6.png" />
+    <Content Include="Script\image\tool7.png" />
+    <Content Include="Script\image\tool8.png" />
+    <Content Include="Script\image\隐藏.png" />
+    <Content Include="Script\jquery-1.9.1.min.js" />
+    <Content Include="Script\jquery.form.js" />
+    <Content Include="Script\jquery.idTabs.min.js" />
+    <Content Include="Script\jquery.placeholder.min.js" />
+    <Content Include="Script\js\GooFunc.js" />
+    <Content Include="Script\js\script.js" />
+    <Content Include="Script\LayerCategory.js" />
+    <Content Include="Script\login\index.css" />
+    <Content Include="Script\login\index.js" />
+    <Content Include="Script\login\jquery.js" />
+    <Content Include="Script\MapManager.js" />
+    <Content Include="Script\menu.js" />
+    <Content Include="Script\modernizr.custom.63321.js" />
+    <Content Include="Script\Register.js" />
+    <Content Include="Script\ruleCreate.js" />
+    <Content Include="SuitEvaluation.aspx" />
+    <Content Include="usercontrol\menu.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonClass\BenFactHelp.cs" />
+    <Compile Include="CommonClass\Matrix.cs" />
+    <Compile Include="CommonClass\OperateUsers.cs" />
+    <Compile Include="CommonClass\SingEvalMethod.cs" />
+    <Compile Include="DataManager.aspx.cs">
+      <DependentUpon>DataManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataManager.aspx.designer.cs">
+      <DependentUpon>DataManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KnowlgManager.aspx.cs">
+      <DependentUpon>KnowlgManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KnowlgManager.aspx.designer.cs">
+      <DependentUpon>KnowlgManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.aspx.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login2.aspx.designer.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelManager.aspx.cs">
+      <DependentUpon>ModelManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModelManager.aspx.designer.cs">
+      <DependentUpon>ModelManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RiskAssessment.aspx.cs">
+      <DependentUpon>RiskAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskAssessment.aspx.designer.cs">
+      <DependentUpon>RiskAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rnd.aspx.cs">
+      <DependentUpon>Rnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rnd.aspx.designer.cs">
+      <DependentUpon>Rnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuitEvaluation.aspx.cs">
+      <DependentUpon>SuitEvaluation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuitEvaluation.aspx.designer.cs">
+      <DependentUpon>SuitEvaluation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\menu.ascx.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\menu.ascx.designer.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\images\Thumbs.db" />
+    <None Include="css\Thumbs.db" />
+    <None Include="ImagesLogin\Thumbs.db" />
+    <None Include="images\Thumbs.db" />
+    <None Include="Properties\PublishProfiles\决策支持子系统.pubxml" />
+    <None Include="Script\CVS\Entries" />
+    <None Include="Script\CVS\Repository" />
+    <None Include="Script\CVS\Root" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6513</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,89 @@
+@CHARSET "UTF-8";
+.Key{
+    width:250px;
+}
+.Value{
+    width:70px;
+}
+.divOpacity{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top:0px;
+    bottom: 0px;
+    background-color:black; color: white;
+    filter:alpha(Opacity=75);-moz-opacity:0.75;opacity: 0.75
+
+}
+
+#main{
+    /*border:3px red solid;
+    width:1000px;
+    /*height:550px;
+    height:600px;
+    overflow:hidden;*/
+}
+#box div{
+    width:1000px;
+    /*height:550px;*/
+    /*height:600px;*/
+    /*border: solid 1px red;*/
+}
+#eigenfunctionDesign input{
+    width: 385px;
+}
+
+#modelCreatedRule input{
+    width: 86px;
+}
+#syxLevel input{
+    width: 70px;
+}
+
+
+.center { MARGIN-RIGHT: auto; MARGIN-LEFT: auto; }
+
+.TaskDiv{
+    position: absolute;
+    left: 0px; top: 0px;
+    /*height:100%;*/
+    /*width:100%;*/
+    padding:0;
+    margin:0;
+}
+
+
+.dialog
+{
+    width:500px;
+    height:250px;
+    left: 400px; top: 200px;
+    position:absolute;
+    background-color:#ccc;
+    -webkit-box-shadow:1px 1px 3px #292929;
+    -moz-box-shadow:1px 1px 3px #292929;
+    box-shadow:1px 1px 3px #292929;
+    margin:10px;
+}
+
+.dialog-title
+{
+    color:#fff;
+    background-color:#404040;
+    font-size:12pt;
+    font-weight:bold;
+    padding:4px 6px;
+    cursor:move;
+}
+.dialog-content
+{
+    padding:4px;
+}
+.W{
+	display: none;
+}
+.SutiaPDJZ{
+	/*标记样式，用于选取节点*/
+}
